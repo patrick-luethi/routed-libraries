@@ -1,0 +1,28 @@
+{
+  "npmScope": "routed-libraries",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "test-app": {
+      "tags": []
+    },
+    "test-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["test-app"]
+    },
+    "non-lazy-routing-lib": {
+      "tags": []
+    },
+    "lazy-routing-lib": {
+      "tags": []
+    }
+  }
+}

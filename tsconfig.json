@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@routed-libraries/non-lazy-routing-lib": [
+        "dist/libs/non-lazy-routing-lib"
+      ],
+      "@routed-libraries/lazy-routing-lib": [
+        "dist/libs/lazy-routing-lib"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
